@@ -8,9 +8,9 @@ const Linguagens: React.FC = () => {
         Bem-vindo à sala de jogos de Linguagens
       </h1>
       <div className="flex flex-col gap-4">
-        <Link href="/linguagens/jogo1" passHref>
+        <Link href="/linguagens/jogodepalavras" passHref>
           <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-            Jogo 1
+            Jogo de Correspondência de Palavras
           </button>
         </Link>
         <Link href="/linguagens/jogo2" passHref>
@@ -24,6 +24,11 @@ const Linguagens: React.FC = () => {
           </button>
         </Link>
       </div>
+      <Link href="/home" passHref>
+        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-8">
+          Voltar à página inicial
+        </button>
+      </Link>
     </div>
   );
 };
