@@ -8,7 +8,7 @@ const Ciencias: React.FC = () => {
         Bem-vindo à sala de jogos de Ciências
       </h1>
       <div className="flex flex-col gap-4">
-        <Link href="/ciencias/jogo1" passHref>
+        <Link href="/ciencias/jogo1ciencia" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
             Jogo 1
           </button>
@@ -24,6 +24,11 @@ const Ciencias: React.FC = () => {
           </button>
         </Link>
       </div>
+      <Link href="/home" passHref>
+        <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mt-16">
+          Voltar à página inicial
+        </button>
+      </Link>
     </div>
   );
 };
