@@ -15,7 +15,7 @@ const Home: React.FC = () => {
               src="/images/numero.png"
               alt="Matéria 1"
               width={150}
-              height={150}
+              height={100}
               className="rounded-lg" 
             />
             <span className="block text-[#ffa742] mt-2">Matemática</span>
@@ -48,7 +48,7 @@ const Home: React.FC = () => {
         <Link href="/materias/outros" passHref>
           <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
             <Image
-              src="/images/imagem.jpg"
+              src="/images/english.png"
               alt="Matéria 4"
               width={150}
               height={150}
