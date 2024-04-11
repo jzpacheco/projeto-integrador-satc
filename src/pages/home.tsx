@@ -6,16 +6,16 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col bg-[#ffa742] items-center justify-center h-screen font-sans ">
       <h1 className="mb-4 pt-20 text-3xl  font-bold text-white">
-        Escolha sua matéria
+        Seja bem-vindo ao XXXXXXXXX!
       </h1>
       <div className="relative flex flex-wrap justify-center w-full h-full">
         <Link href="/Materias/matematica" passHref>
           <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
             <Image
-              src="/images/numero.png"
+              src="/images/matematica.png"
               alt="Matéria 1"
               width={150}
-              height={100}
+              height={150}
               className="rounded-lg" 
             />
             <span className="block text-[#ffa742] mt-2">Matemática</span>
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         <Link href="/Materias/linguas" passHref>
           <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
             <Image
-              src="/images/letra.png"
+              src="/images/letras.png"
               alt="Matéria 3"
               width={150}
               height={150}
@@ -57,19 +57,10 @@ const Home: React.FC = () => {
             <span className="block text-[#ffa742] mt-2">Inglês</span>
           </button>
         </Link>
-        {/* <Link href="/materias/quimica" passHref>
-          <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
-            <Image
-              src="/images/imagem.jpg"
-              alt="Matéria 5"
-              width={150}
-              height={150}
-              className="rounded-lg"
-            />
-            <span className="block text-[#ffa742] mt-2">Química</span>
-          </button>
-        </Link> */}
       </div>
+      <h1 className="mb-4 pt-10 text-3xl font-bold text-white">
+        Por favor escolha uma matéria!!
+      </h1>
     </div>
   );
 };
