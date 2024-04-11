@@ -12,11 +12,11 @@ const Home: React.FC = () => {
         <Link href="/Materias/matematica" passHref>
           <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
             <Image
-              src="/images/imagem.jpg"
+              src="/images/numero.png"
               alt="Matéria 1"
               width={150}
               height={150}
-              className="rounded-lg"
+              className="rounded-lg" 
             />
             <span className="block text-[#ffa742] mt-2">Matemática</span>
           </button>
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         <Link href="/Materias/ciencias" passHref>
           <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
             <Image
-              src="/images/imagem.jpg"
+              src="/images/natureza.png"
               alt="Matéria 2"
               width={150}
               height={150}
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         <Link href="/Materias/linguas" passHref>
           <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
             <Image
-              src="/images/imagem.jpg"
+              src="/images/letra.png"
               alt="Matéria 3"
               width={150}
               height={150}
