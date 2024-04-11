@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Link from "next/link";
 const Jogo1: React.FC = () => {
   const [perguntaAtual, setPerguntaAtual] = useState(0);
   const [respostasCorretas, setRespostasCorretas] = useState(0);
@@ -15,11 +15,10 @@ const Jogo1: React.FC = () => {
     { pergunta: "10 / 2", resposta: "5" },
     { pergunta: "7 + 8", resposta: "15" },
     { pergunta: "20 - 6", resposta: "14" },
-    // Adicione mais perguntas conforme necessário
   ];
 
   const handleResposta = () => {
-    if (bloquearInput) return; // Não permite responder enquanto o feedback está sendo exibido
+    if (bloquearInput) return;
 
     if (resposta === perguntas[perguntaAtual].resposta) {
       setFeedback("Certo!");
@@ -29,14 +28,14 @@ const Jogo1: React.FC = () => {
       setRespostasIncorretas(respostasIncorretas + 1);
     }
 
-    setBloquearInput(true); // Bloqueia o input enquanto o feedback está sendo exibido
+    setBloquearInput(true);
 
     setTimeout(() => {
       setFeedback("");
       setBloquearInput(false);
       setResposta("");
       setPerguntaAtual(perguntaAtual + 1);
-    }, 1000); // Limpa o feedback e avança para a próxima pergunta após 1 segundo
+    }, 1000);
   };
 
   return (
@@ -50,7 +49,7 @@ const Jogo1: React.FC = () => {
             type="text"
             value={resposta}
             onChange={(e) => setResposta(e.target.value)}
-            className="mb-4 p-2 border border-gray-300 rounded text-black" // Adiciona a classe text-black
+            className="mb-4 p-2 border border-gray-300 rounded text-black"
             disabled={bloquearInput}
           />
           <button
@@ -70,6 +69,11 @@ const Jogo1: React.FC = () => {
           {respostasIncorretas}.
         </h1>
       )}
+      <Link href="/Materias/matematica" passHref>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold m-4 py-2 px-4 rounded mt-8">
+          Voltar à página inicial
+        </button>
+      </Link>
     </div>
   );
 };

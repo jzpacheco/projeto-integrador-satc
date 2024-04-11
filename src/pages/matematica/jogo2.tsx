@@ -50,8 +50,8 @@ const Jogo2: React.FC = () => {
       <p>{resultado}</p>
       <p>Acertos: {acertos}</p>
       <p>Erros: {erros}</p>
-      <Link href="/matematica " passHref>
-        <button className="text-blue-500 underline">
+      <Link href="/Materias/matematica" passHref>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold m-4 py-2 px-4 rounded mt-8">
           Voltar à página inicial
         </button>
       </Link>
