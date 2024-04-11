@@ -54,10 +54,10 @@ const Home: React.FC = () => {
               height={150}
               className="rounded-lg"
             />
-            <span className="block text-[#ffa742] mt-2">Outros</span>
+            <span className="block text-[#ffa742] mt-2">Inglês</span>
           </button>
         </Link>
-        <Link href="/materias/quimica" passHref>
+        {/* <Link href="/materias/quimica" passHref>
           <button className="m-4 p-4 bg-white rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
             <Image
               src="/images/imagem.jpg"
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
             />
             <span className="block text-[#ffa742] mt-2">Química</span>
           </button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
