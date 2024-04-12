@@ -1,4 +1,4 @@
-# Educaplay
+# EducaPlay
 
 ## Descrição
 
