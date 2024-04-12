@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   return (
     <div className="flex flex-col bg-[#ffa742] items-center justify-center h-screen font-sans ">
       <h1 className="mb-4 pt-20 text-3xl  font-bold text-white">
-        Seja bem-vindo ao XXXXXXXXX!
+        Seja bem-vindo ao EducaPlay!
       </h1>
       <div className="relative flex flex-wrap justify-center w-full h-full">
         <Link href="/Materias/matematica" passHref>
