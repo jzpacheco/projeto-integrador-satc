@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col bg-[#ffa742] items-center justify-center h-screen font-sans ">
-      <h1 className="mb-4 pt-20 text-3xl  font-bold text-white">
+    <div className="flex flex-col bg-[#ffa742] items-center justify-center h-screen font-sans relative">
+      <h1 className="mb-4 pt-20 text-3xl font-bold text-white">
         Seja bem-vindo ao XXXXXXXXX!
       </h1>
       <div className="relative flex flex-wrap justify-center w-full h-full">
@@ -58,9 +58,14 @@ const Home: React.FC = () => {
           </button>
         </Link>
       </div>
-      <h1 className="mb-4 pt-10 text-3xl font-bold text-white">
+      <h1 className="mb-4 pt-2 text-3xl font-bold text-white">
         Por favor escolha uma matéria!!
       </h1>
+      <Link href="/apresentacao" passHref>
+        <button className="absolute bottom-4 right-4 bg-[rgb(255,94,66)] hover:bg-[rgb(255,94,66)] text-white font-bold py-2 px-4 rounded">
+          Voltar à página inicial
+        </button>
+      </Link>
     </div>
   );
 };
