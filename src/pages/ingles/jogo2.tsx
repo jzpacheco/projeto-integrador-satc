@@ -1,25 +1,26 @@
+// jogar pra matéria de INGLÊS
 import Link from "next/link";
 import React, { useState } from "react";
 
 const palavras = [
-  { extenso: "25", ingles: "vinte e cinco" },
-  { extenso: "32", ingles: "trinta e dois" },
-  { extenso: "3455", ingles: "tres mil quatrocentos e cinquenta e cinco" },
-  { extenso: "34633", ingles: "trinta e quatro mil seicentos e trinta e tres" },
-  { extenso: "670", ingles: "seicentos e setenta" },
-  { extenso: "14", ingles: "quatorze" },
-  { extenso: "325", ingles: "trezentos vinte e cinco" },
-  { extenso: "66", ingles: "sessenta e seis" },
-  { extenso: "77", ingles: "setenta e sete" },
-  { extenso: "50", ingles: "cinquenta" },
-  { extenso: "4619", ingles: "quatro mil seiscentos e dezenove" },
-  { extenso: "7653", ingles: "sete mil seiscentos e cinquenta e tres" },
-  { extenso: "98", ingles: "noventa e oito" },
-  { extenso: "43", ingles: "quarenta e tres" },
-  { extenso: "109746", ingles: "cento e nove mil setecentos e quarenta e seis" }  
+  { portugues: "Qual palavra não pertence ao grupo: Summer, Winter, Spring, Autumn, Elephant?", ingles: "elephant" },
+  { portugues: "Identifique a palavra que não está relacionada: Book, Pen, Ruler, Apple, Television?", ingles: "apple" },
+  { portugues: "Qual palavra não se encaixa: Red, Blue, Green, Chair, Yellow?", ingles: "chair" },
+  { portugues: "Encontre a palavra que não pertence ao grupo: Lion, Tiger, Elephant, Snake, Airplane?", ingles: "airplane" },
+  { portugues: "Qual palavra não está associada: Pizza, Burger, Salad, Sandwich, Bicycle?", ingles: "bicycle" },
+  { portugues: "Qual dessas palavras não pertence ao grupo: Happy, Joyful, Sorrowful, Cheerful, Fruit?", ingles: "fruit" },
+  { portugues: "Identifique a palavra que não está relacionada: Apple, Orange, Banana, Carrot, Cat?", ingles: "Cat" },
+  { portugues: "Qual palavra não se encaixa: Run, Jump, Swim, Fly, Fire?", ingles: "Fire" },
+  { portugues: "Encontre a palavra que não pertence ao grupo: Monday, Tuesday, Friday, Wednesday, Television?", ingles: "television" },
+  { portugues: "Qual palavra não está associada: Dog, Cat, Fish, Bird, Computer?", ingles: "computer" },
+  { portugues: "Qual palavra não está associada: Guitar, Piano, Violin, Drum, Carrot?", ingles: "carrot" },
+  { portugues: "Encontre a palavra que não pertence ao grupo: Doctor, Nurse, Teacher, Plumber, Keyboard?", ingles: "keyboard" },
+  { portugues: "Qual palavra não se encaixa: Car, Bus, Train, Ship, Strawberry?", ingles: "ship" },
+  { portugues: "Identifique a palavra que não está relacionada: Desk, Chair, Lamp, Sofa, Banana?", ingles: "banana" },
+  { portugues: "Qual dessas palavras não pertence ao grupo: Football, Basketball, Tennis, Water, Volleyball?", ingles: "water" }  
 ];
 
-const Jogo1: React.FC = () => {
+const Jogo2: React.FC = () => {
   const [palavraAtual, setPalavraAtual] = useState(0);
   const [respostaUsuario, setRespostaUsuario] = useState("");
   const [mostrarResposta, setMostrarResposta] = useState(false);
@@ -49,7 +50,7 @@ const Jogo1: React.FC = () => {
         Jogo de Correspondência de Palavras
       </h1>
       <div className="mb-4">
-        <p>Qual é a tradução de "{palavras[palavraAtual].extenso}"?</p>
+        <p>Qual é a tradução de "{palavras[palavraAtual].portugues}"?</p>
         <div className="flex items-center">
           <input
             type="text"
@@ -90,4 +91,4 @@ const Jogo1: React.FC = () => {
   );
 };
 
-export default Jogo1;
+export default Jogo2;

@@ -3,39 +3,39 @@ import React, { useState } from "react";
 
 const perguntas = [
   {
-    pergunta: "Qual é o maior animal terrestre?",
-    opcoes: ["Elefante", "Girafa", "Hipopótamo"],
-    respostaCorreta: "Elefante",
+    pergunta: "A qual grupo os seguintes animais pertencem? (1)",
+    opcoes: ["Galinha", "Pinguim", "Coruja", "Pomba", ],
+    respostaCorreta: "aves",
   },
   {
-    pergunta: "Qual animal vive na água e é conhecido por seu tamanho gigante?",
-    opcoes: ["Tubarão", "Golfinho", "Baleia"],
-    respostaCorreta: "Baleia",
+    pergunta: "A qual grupo os seguintes animais pertencem? (2)",
+    opcoes: ["Baleia", "Gato", "Cachorro", "Macaco"],
+    respostaCorreta: "mamíferos",
   },
   {
-    pergunta: "Qual animal não voa e tem penas?",
-    opcoes: ["Pato", "Águia", "Galinha"],
-    respostaCorreta: "Galinha",
+    pergunta: "A qual grupo os seguintes animais pertencem? (3)",
+    opcoes: ["Besouro", "Formiga", "Borboleta", "Abelha"],
+    respostaCorreta: "insetos",
   },
   {
-    pergunta: "Qual é o planeta mais próximo do Sol?",
-    opcoes: ["Terra", "Vênus", "Mercúrio"],
-    respostaCorreta: "Mercúrio",
+    pergunta: "A qual grupo os seguintes animais pertencem? (4)",
+    opcoes: ["Salmão", "Tubarão", "Carpa", "Atum"],
+    respostaCorreta: "peixes",
   },
   {
-    pergunta: "Qual é o maior planeta do sistema solar?",
-    opcoes: ["Júpiter", "Saturno", "Urano"],
-    respostaCorreta: "Júpiter",
+    pergunta: "Quantos planetas existem no sistema solar?",
+    opcoes: ["a) 10", "b) 11", "c) 7 ", "d) 8"],
+    respostaCorreta: "d",
   },
   {
-    pergunta: "Qual é o nome da estrela que fica no centro do sistema solar?",
-    opcoes: ["Alfa Centauri", "Sirius", "Sol"],
-    respostaCorreta: "Sol",
+    pergunta: "O que causa o arco-íris?",
+    opcoes: ["a) A luz do Sol refletida na Lua", "b) A refração da luz do Sol nas gotas de chuva", " c) A luz do Sol refletida nas nuvens", "d ) A luz da Lua refletida nas gotas de chuvaResposta correta"],
+    respostaCorreta: "b",
   },
   {
-    pergunta: "Qual é o nome da galáxia onde se localiza o sistema solar?",
-    opcoes: ["Via Láctea", "Andrômeda", "Triângulo"],
-    respostaCorreta: "Via Láctea",
+    pergunta: "O que é uma sombra?",
+    opcoes: ["a) Uma área onde não há luz", "b) Uma área onde há muita luz", "c) Uma área onde há mais calor", "d) Uma área onde há menos cor"],
+    respostaCorreta: "a",
   },
 ];
 
