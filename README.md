@@ -1,35 +1,38 @@
 # EducaPlay
+<p align="center">
+  <img height="100" src="public/images/satclogo.png">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img height="100" src="public/images/englogo.jpg">
+</p>
+  
+<hr>
 
-## Descrição
+## Integrantes:
+- [Alexandre Hermes](https://github.com/Alexandre200319)
+- [Jefferson Barzan Alexandrino](https://github.com/JeffAlexandrino)
+- [Jefferson Zeferino Pacheco](https://github.com/jzpacheco)
 
-Bem-vindo ao Projeto Integrador: Sistema Web de Mini Games Educacionais! Nossa plataforma combina diversão e aprendizado para crianças do ensino fundamental, oferecendo uma coleção de mini games educativos cuidadosamente projetados.
+<hr>
 
-## Uso
+## Sobre o projeto
+### Descrição
+Este projeto consiste em um sistema digital desenvolvido para a disciplina de "Projeto Integrador: Sistema Web". Ele tem como objetivo explorar os conceitos e práticas relacionados à programação de Front-End, BackEnd e Banco de Dados na plataforma Visual Studio Code.
 
-Explicação sobre como usar o projeto após a instalação. Inclua exemplos de comandos ou interações típicas do usuário.
+Nossa plataforma combina diversão e aprendizado para crianças do ensino fundamental, oferecendo uma coleção de mini games educativos cuidadosamente projetados.
 
-## Contribuição
+### Objetivo
+O objetivo deste projeto é desenvolver um sistema web interativo e educacional destinado a crianças entre 6 e 10 anos, com foco no tema de perguntas escolares. O propósito principal é proporcionar uma plataforma que auxilie no aprendizado de diversas disciplinas escolares, como matemática, ciências, língua portuguesa e inglês, de maneira divertida e envolvente.
 
-Instruções para contribuir com o projeto, incluindo como reportar bugs, sugerir melhorias ou enviar pull requests.
+### Estrutura do Projeto 
 
-## Autores
-Este projeto foi desenvolvido por: 
-- Alexandre Hermes
-- Jefferson Barzan Alexandrino
-- Jefferson Zeferino Pacheco 
 
-## Agradecimentos
+<hr>
 
-Agradecimentos a pessoas ou organizações que contribuíram de alguma forma para o projeto.
+<hr>
 
-## Estado do Projeto
-
-Breve indicação sobre o estado atual do projeto, como estágio de desenvolvimento, bugs conhecidos ou próximos passos.
-
-## Documentação Adicional
-
-Links para documentação adicional, como documentação técnica, guias de usuário ou recursos de apoio.
-
-## Instalação
-
-Instruções sobre como instalar e configurar o projeto localmente. Isso pode incluir requisitos de sistema, dependências e comandos específicos para configuração.
+## Tecnologias, bibliotecas e frameworks
+1. HTML
+2. CSS
+3. 
+4. 
+5. 
