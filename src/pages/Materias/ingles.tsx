@@ -8,19 +8,19 @@ const Ingles: React.FC = () => {
         Bem-vindo à sala de jogos de Inglês
       </h1>
       <div className="flex flex-col gap-4">
-        <Link href="/ingles/jogo1" passHref>
+        <Link href="/ingles/traduzir" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full">
-            Jogo 1
+            Jogo de Tradução de Palavras em Inglês
           </button>
         </Link>
         <Link href="/ingles/jogo2" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full">
-            Jogo 2
+            Jogo de Associação de Palavras em Inglês
           </button>
         </Link>
         <Link href="/ingles/jogo3" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full">
-            Jogo 3
+            Jogo de Correspondência de Palavras em Inglês
           </button>
         </Link>
       </div>

@@ -86,7 +86,7 @@ const JogoMemoria: React.FC = () => {
           </div>
         ))}
       </div>
-      {paresEncontrados.length === operacoes.length * 2 && (
+      {paresEncontrados.length === operacoes.length && (
         <button
           onClick={reiniciarJogo}
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"

@@ -9,44 +9,45 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Qual é o antônimo de 'grande'?",
-    options: ["Pequeno", "Alto", "Largo", "Gordo"],
-    correctAnswer: "Pequeno",
+    question: "O ________ é um mamífero que voa à noite.",
+    options: ["macaco", "elefante", "morcego", "gato"],
+    correctAnswer: "morcego",
   },
   {
-    question: "Qual destes é um animal que voa?",
-    options: ["Cachorro", "Gato", "Pássaro", "Peixe"],
-    correctAnswer: "Pássaro",
+    question: "As ________ são grandes felinas encontradas na selva.",
+    options: ["zebra", "girafa", "onça", "tartaruga"],
+    correctAnswer: "onça",
   },
   {
-    question: "Qual é a capital do Brasil?",
-    options: ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
-    correctAnswer: "Brasília",
+    question: "O ________ é um réptil que se arrasta pelo chão.",
+    options: ["pato", "cachorro", "cobra", "tubarão"],
+    correctAnswer: "cobra",
   },
 ];
 
-const PortugueseQuiz: React.FC = () => {
+const PortugueseWordGame: React.FC = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [score, setScore] = useState(0);
-  const [showResult, setShowResult] = useState(false);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+
+  const handleCheckAnswer = () => {
+    if (selectedOption === questions[currentQuestion].correctAnswer) {
+      setIsCorrect(true);
+    } else {
+      setIsCorrect(false);
+    }
+  };
 
   const handleNextQuestion = () => {
-    if (selectedOption === questions[currentQuestion].correctAnswer) {
-      setScore(score + 1);
-    }
-    setShowResult(true);
-    setTimeout(() => {
-      setShowResult(false);
-      setSelectedOption(null);
-      setCurrentQuestion(currentQuestion + 1);
-    }, 2000);
+    setSelectedOption(null);
+    setIsCorrect(null);
+    setCurrentQuestion(currentQuestion + 1);
   };
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-blue-300">
       <h1 className="mb-8 text-3xl font-bold">
-        Quiz de Língua Portuguesa para Séries Iniciais
+        Jogo de Palavras em Língua Portuguesa para Séries Iniciais
       </h1>
       {currentQuestion < questions.length ? (
         <div className="mb-4">
@@ -60,35 +61,38 @@ const PortugueseQuiz: React.FC = () => {
                   checked={selectedOption === option}
                   onChange={() => setSelectedOption(option)}
                   className="form-radio h-5 w-5 text-blue-600"
-                  disabled={showResult}
                 />
                 <span className="ml-2">{option}</span>
               </label>
             ))}
           </div>
-          {showResult && (
+          {isCorrect !== null && (
             <p className="mt-2">
-              {selectedOption === questions[currentQuestion].correctAnswer
-                ? "Resposta correta!"
-                : "Resposta incorreta."}
+              {isCorrect ? "Parabéns, você acertou!" : "Que pena, você errou."}{" "}
+              A resposta correta é: {questions[currentQuestion].correctAnswer}
             </p>
           )}
         </div>
       ) : (
         <div>
-          <p>Parabéns, você completou o quiz!</p>
-          <p>
-            Sua pontuação foi: {score} de {questions.length}
-          </p>
+          <p>Parabéns, você completou o jogo!</p>
         </div>
       )}
       {currentQuestion < questions.length && (
         <button
-          onClick={handleNextQuestion}
+          onClick={handleCheckAnswer}
           disabled={selectedOption === null}
           className={`bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mt-4 ${
             selectedOption === null ? "cursor-not-allowed" : ""
           }`}
+        >
+          Verificar Resposta
+        </button>
+      )}
+      {isCorrect !== null && (
+        <button
+          onClick={handleNextQuestion}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
         >
           Próxima Pergunta
         </button>
@@ -102,4 +106,4 @@ const PortugueseQuiz: React.FC = () => {
   );
 };
 
-export default PortugueseQuiz;
+export default PortugueseWordGame;

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import Link from "next/link";
+import React, { useState } from "react";
 
 const palavras = [
   { portugues: "Casa", ingles: "House" },
@@ -19,7 +19,7 @@ const palavras = [
   { portugues: "Montanha", ingles: "Mountain" },
 ];
 
-const Jogo1: React.FC = () => {
+const Jogo3: React.FC = () => {
   const [palavraAtual, setPalavraAtual] = useState(0);
   const [respostaUsuario, setRespostaUsuario] = useState("");
   const [mostrarResposta, setMostrarResposta] = useState(false);
@@ -46,34 +46,28 @@ const Jogo1: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-purple-300">
       <h1 className="mb-8 text-3xl font-bold">
-        Jogo de Correspondência de Palavras
+        Jogo de Correspondência de Palavras em Inglês
       </h1>
-      <div className="mb-4">
-        <p>Qual é a tradução de "{palavras[palavraAtual].portugues}"?</p>
-        <div className="flex items-center">
-          <input
-            type="text"
-            value={respostaUsuario}
-            onChange={(e) => setRespostaUsuario(e.target.value)}
-            className="border border-gray-400 rounded px-2 py-1 mt-2 mr-2"
-            disabled={mostrarResposta}
-          />
-          {mostrarResposta && (
-            <p>
-              {acertou ? "Parabéns, você acertou!" : "Que pena, você errou."} A
-              resposta correta é: {palavras[palavraAtual].ingles}
-            </p>
-          )}
-        </div>
-      </div>
+      <p>Qual é a tradução de "{palavras[palavraAtual].portugues}"?</p>
+      <input
+        type="text"
+        value={respostaUsuario}
+        onChange={(e) => setRespostaUsuario(e.target.value)}
+        style={{ marginBottom: "10px", padding: "5px" }}
+      />
       <div className="mb-4">
         <button
           onClick={verificarResposta}
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mr-2"
-          disabled={mostrarResposta}
         >
           Verificar Resposta
         </button>
+        {mostrarResposta && (
+          <p>
+            {acertou ? "Parabéns, você acertou!" : "Que pena, você errou."} A
+            resposta correta é: {palavras[palavraAtual].ingles}
+          </p>
+        )}
         <button
           onClick={avancarPalavra}
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
@@ -90,4 +84,4 @@ const Jogo1: React.FC = () => {
   );
 };
 
-export default Jogo1;
+export default Jogo3;

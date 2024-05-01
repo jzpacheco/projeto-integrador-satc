@@ -15,12 +15,12 @@ const Linguagens: React.FC = () => {
         </Link>
         <Link href="/linguagens/jogo2" passHref>
           <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-            Jogo 2
+            jogo de completar palavras
           </button>
         </Link>
         <Link href="/linguagens/jogo3" passHref>
           <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
-            Jogo 3
+            Jogo de Soletrar Palavras
           </button>
         </Link>
       </div>
