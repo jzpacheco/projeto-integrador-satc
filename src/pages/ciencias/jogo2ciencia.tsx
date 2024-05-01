@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const perguntas = [
   {
     pergunta: "A qual grupo os seguintes animais pertencem? (1)",
-    opcoes: ["Galinha", "Pinguim", "Coruja", "Pomba", ],
+    opcoes: ["Galinha", "Pinguim", "Coruja", "Pomba"],
     respostaCorreta: "aves",
   },
   {
@@ -29,17 +29,27 @@ const perguntas = [
   },
   {
     pergunta: "O que causa o arco-íris?",
-    opcoes: ["a) A luz do Sol refletida na Lua", "b) A refração da luz do Sol nas gotas de chuva", " c) A luz do Sol refletida nas nuvens", "d ) A luz da Lua refletida nas gotas de chuvaResposta correta"],
+    opcoes: [
+      "a) A luz do Sol refletida na Lua",
+      "b) A refração da luz do Sol nas gotas de chuva",
+      " c) A luz do Sol refletida nas nuvens",
+      "d ) A luz da Lua refletida nas gotas de chuvaResposta correta",
+    ],
     respostaCorreta: "b",
   },
   {
     pergunta: "O que é uma sombra?",
-    opcoes: ["a) Uma área onde não há luz", "b) Uma área onde há muita luz", "c) Uma área onde há mais calor", "d) Uma área onde há menos cor"],
+    opcoes: [
+      "a) Uma área onde não há luz",
+      "b) Uma área onde há muita luz",
+      "c) Uma área onde há mais calor",
+      "d) Uma área onde há menos cor",
+    ],
     respostaCorreta: "a",
   },
 ];
 
-const Jogo1: React.FC = () => {
+const Jogo2: React.FC = () => {
   const [perguntaAtual, setPerguntaAtual] = useState(0);
   const [respostaUsuario, setRespostaUsuario] = useState("");
   const [mostrarResposta, setMostrarResposta] = useState(false);
@@ -121,4 +131,4 @@ const Jogo1: React.FC = () => {
   );
 };
 
-export default Jogo1;
+export default Jogo2;

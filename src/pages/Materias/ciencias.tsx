@@ -10,17 +10,17 @@ const Ciencias: React.FC = () => {
       <div className="flex flex-col gap-4">
         <Link href="/ciencias/jogo1ciencia" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-            Jogo 1
+            Quiz de ciencias 1
           </button>
         </Link>
-        <Link href="/ciencias/jogo2" passHref>
+        <Link href="/ciencias/jogo2ciencia" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-            Jogo 2
+            Quiz de ciencias 2
           </button>
         </Link>
-        <Link href="/ciencias/jogo3" passHref>
+        <Link href="/ciencias/jogo3ciencia" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-            Jogo 3
+            jogo de correspondência
           </button>
         </Link>
       </div>
