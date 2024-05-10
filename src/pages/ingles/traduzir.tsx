@@ -81,7 +81,7 @@ const Jogo1: React.FC = () => {
           Próxima Palavra
         </button>
       </div>
-      <Link href="/Materias/linguas" passHref>
+      <Link href="/Materias/ingles" passHref>
         <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-8">
           Voltar à página inicial
         </button>

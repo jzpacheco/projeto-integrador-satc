@@ -97,7 +97,7 @@ const PortugueseWordGame: React.FC = () => {
           Próxima Pergunta
         </button>
       )}
-      <Link href="/Materias/linguagens" passHref>
+      <Link href="/Materias/linguas" passHref>
         <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-16">
           Voltar à página inicial
         </button>
