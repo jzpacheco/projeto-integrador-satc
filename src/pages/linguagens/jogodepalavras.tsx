@@ -9,7 +9,7 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Qual é o antônimo de 'grande'?",
+    question: "Qual é o oposto de 'grande'?",
     options: ["Pequeno", "Alto", "Largo", "Gordo"],
     correctAnswer: "Pequeno",
   },

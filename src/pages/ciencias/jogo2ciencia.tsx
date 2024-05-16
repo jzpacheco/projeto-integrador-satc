@@ -3,6 +3,41 @@ import React, { useState } from "react";
 
 const perguntas = [
   {
+    pergunta: "Qual é o maior animal terrestre?",
+    opcoes: ["Elefante", "Girafa", "Hipopótamo"],
+    respostaCorreta: "Elefante",
+  },
+  {
+    pergunta: "Qual animal vive na água e é conhecido por seu tamanho gigante?",
+    opcoes: ["Tubarão", "Golfinho", "Baleia"],
+    respostaCorreta: "Baleia",
+  },
+  {
+    pergunta: "Qual animal não voa e tem penas?",
+    opcoes: ["Pato", "Águia", "Galinha"],
+    respostaCorreta: "Galinha",
+  },
+  {
+    pergunta: "Qual é o planeta mais próximo do Sol?",
+    opcoes: ["Terra", "Vênus", "Mercúrio"],
+    respostaCorreta: "Mercúrio",
+  },
+  {
+    pergunta: "Qual é o maior planeta do sistema solar?",
+    opcoes: ["Júpiter", "Saturno", "Urano"],
+    respostaCorreta: "Júpiter",
+  },
+  {
+    pergunta: "Qual é o nome da estrela que fica no centro do sistema solar?",
+    opcoes: ["Alfa Centauri", "Sirius", "Sol"],
+    respostaCorreta: "Sol",
+  },
+  {
+    pergunta: "Qual é o nome da galáxia onde se localiza o sistema solar?",
+    opcoes: ["Via Láctea", "Andrômeda", "Triângulo"],
+    respostaCorreta: "Via Láctea",
+  },
+  {
     pergunta: "A qual grupo os seguintes animais pertencem? (1)",
     opcoes: ["Galinha", "Pinguim", "Coruja", "Pomba"],
     respostaCorreta: "aves",
