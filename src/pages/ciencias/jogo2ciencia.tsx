@@ -33,44 +33,44 @@ const perguntas = [
     respostaCorreta: "Sol",
   },
   {
-    pergunta: "Qual é o nome da galáxia onde se localiza o sistema solar?",
-    opcoes: ["Via Láctea", "Andrômeda", "Triângulo"],
-    respostaCorreta: "Via Láctea",
+    pergunta: "",
+    opcoes: ["", "", ""],
+    respostaCorreta: "",
   },
   {
-    pergunta: "A qual grupo os seguintes animais pertencem? (1)",
+    pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Galinha", "Pinguim", "Coruja", "Pomba"],
     respostaCorreta: "aves",
   },
   {
-    pergunta: "A qual grupo os seguintes animais pertencem? (2)",
+    pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Baleia", "Gato", "Cachorro", "Macaco"],
     respostaCorreta: "mamíferos",
   },
   {
-    pergunta: "A qual grupo os seguintes animais pertencem? (3)",
+    pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Besouro", "Formiga", "Borboleta", "Abelha"],
     respostaCorreta: "insetos",
   },
   {
-    pergunta: "A qual grupo os seguintes animais pertencem? (4)",
+    pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Salmão", "Tubarão", "Carpa", "Atum"],
     respostaCorreta: "peixes",
   },
   {
     pergunta: "Quantos planetas existem no sistema solar?",
     opcoes: ["a) 10", "b) 11", "c) 7 ", "d) 8"],
-    respostaCorreta: "d",
+    respostaCorreta: "d) 8",
   },
   {
     pergunta: "O que causa o arco-íris?",
     opcoes: [
       "a) A luz do Sol refletida na Lua",
       "b) A refração da luz do Sol nas gotas de chuva",
-      " c) A luz do Sol refletida nas nuvens",
-      "d ) A luz da Lua refletida nas gotas de chuvaResposta correta",
+      "c) A luz do Sol refletida nas nuvens",
+      "d) A luz da Lua refletida nas gotas de chuvaResposta correta",
     ],
-    respostaCorreta: "b",
+    respostaCorreta: "b) A refração da luz do Sol nas gotas de chuva",
   },
   {
     pergunta: "O que é uma sombra?",
@@ -80,7 +80,7 @@ const perguntas = [
       "c) Uma área onde há mais calor",
       "d) Uma área onde há menos cor",
     ],
-    respostaCorreta: "a",
+    respostaCorreta: "a) Uma área onde não há luz",
   },
 ];
 

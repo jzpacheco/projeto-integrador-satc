@@ -4,13 +4,13 @@ import React, { useState } from "react";
 const perguntas = [
   {
     pergunta: "Qual é o nome da galáxia onde se localiza o sistema solar?",
-    opcoes: ["Via Láctea", "Andrômeda", "Triângulo"],
-    respostaCorreta: "Via Láctea",
+    opcoes: ["a) Via Láctea", "b) Andrômeda", "c) Triângulo"],
+    respostaCorreta: "a) Via Láctea",
   },
   {
     pergunta: "Qual é o nome do planeta conhecido como o 'planeta vermelho'?",
-    opcoes: ["Vênus", "Júpiter", "Marte"],
-    respostaCorreta: "Marte",
+    opcoes: ["a) Vênus", "b) Júpiter", "c) Marte"],
+    respostaCorreta: "c) Marte",
   },
   {
     pergunta: "O que são planetas gasosos??",

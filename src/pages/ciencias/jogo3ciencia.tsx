@@ -9,25 +9,64 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Qual é o maior planeta do sistema solar?",
-    options: ["Júpiter", "Saturno", "Terra", "Netuno"],
-    correctAnswer: "Júpiter",
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
   },
   {
-    question:
-      "Qual é o animal que voa e é conhecido por migrar longas distâncias?",
-    options: ["Pombo", "Andorinha", "Gaivota", "Ganso"],
-    correctAnswer: "Ganso",
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
   },
   {
-    question: "O que é um ano-luz?",
-    options: [
-      "A distância que a luz percorre em um ano",
-      "A distância entre a Terra e a Lua",
-      "O tempo que a luz leva para chegar à Terra",
-      "A distância entre a Terra e o Sol",
-    ],
-    correctAnswer: "A distância que a luz percorre em um ano",
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
+  },
+  {
+    question: "",
+    options: ["", "", "", ""],
+    correctAnswer: "",
   },
 ];
 
