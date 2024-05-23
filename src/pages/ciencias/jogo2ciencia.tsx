@@ -4,55 +4,50 @@ import React, { useState } from "react";
 const perguntas = [
   {
     pergunta: "Qual é o maior animal terrestre?",
-    opcoes: ["Elefante", "Girafa", "Hipopótamo"],
-    respostaCorreta: "Elefante",
+    opcoes: ["a) Elefante", "b) Girafa", "c) Hipopótamo"],
+    respostaCorreta: "a) Elefante",
   },
   {
     pergunta: "Qual animal vive na água e é conhecido por seu tamanho gigante?",
-    opcoes: ["Tubarão", "Golfinho", "Baleia"],
-    respostaCorreta: "Baleia",
+    opcoes: ["a) Tubarão", "b) Golfinho", "c) Baleia"],
+    respostaCorreta: "c) Baleia",
   },
   {
     pergunta: "Qual animal não voa e tem penas?",
-    opcoes: ["Pato", "Águia", "Galinha"],
-    respostaCorreta: "Galinha",
+    opcoes: ["a) Pato", "b) Águia", "c) Galinha"],
+    respostaCorreta: "c) Galinha",
   },
   {
     pergunta: "Qual é o planeta mais próximo do Sol?",
-    opcoes: ["Terra", "Vênus", "Mercúrio"],
-    respostaCorreta: "Mercúrio",
+    opcoes: ["a) Terra", "b) Vênus", "c) Mercúrio"],
+    respostaCorreta: "c) Mercúrio",
   },
   {
     pergunta: "Qual é o maior planeta do sistema solar?",
-    opcoes: ["Júpiter", "Saturno", "Urano"],
-    respostaCorreta: "Júpiter",
+    opcoes: ["a) Júpiter", "b) Saturno", "c) Urano"],
+    respostaCorreta: "a) Júpiter",
   },
   {
     pergunta: "Qual é o nome da estrela que fica no centro do sistema solar?",
-    opcoes: ["Alfa Centauri", "Sirius", "Sol"],
-    respostaCorreta: "Sol",
+    opcoes: ["a) Alfa Centauri", "b) Sirius", "c) Sol"],
+    respostaCorreta: "c) Sol",
   },
-  {
-    pergunta: "",
-    opcoes: ["", "", ""],
-    respostaCorreta: "",
-  },
-  {
+  { // Digitar em um campo
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Galinha", "Pinguim", "Coruja", "Pomba"],
     respostaCorreta: "aves",
   },
-  {
+  { // Digitar em um campo
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Baleia", "Gato", "Cachorro", "Macaco"],
     respostaCorreta: "mamíferos",
   },
-  {
+  { // Digitar em um campo
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Besouro", "Formiga", "Borboleta", "Abelha"],
     respostaCorreta: "insetos",
   },
-  {
+  { // Digitar em um campo
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Salmão", "Tubarão", "Carpa", "Atum"],
     respostaCorreta: "peixes",

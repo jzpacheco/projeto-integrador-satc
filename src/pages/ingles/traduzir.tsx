@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-const palavras = [
+const palavras = [ 
   { portugues: "Casa", ingles: "House" },
   { portugues: "Gato", ingles: "Cat" },
   { portugues: "Sol", ingles: "Sun" },
