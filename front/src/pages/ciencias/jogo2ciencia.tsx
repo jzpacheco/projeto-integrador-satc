@@ -7,56 +7,49 @@ const perguntas = [
     opcoes: ["a) Elefante", "b) Girafa", "c) Hipopótamo"],
     respostaCorreta: "a) Elefante",
   },
+
   {
     pergunta: "Qual animal vive na água e é conhecido por seu tamanho gigante?",
     opcoes: ["a) Tubarão", "b) Golfinho", "c) Baleia"],
     respostaCorreta: "c) Baleia",
   },
+
   {
     pergunta: "Qual animal não voa e tem penas?",
     opcoes: ["a) Pato", "b) Águia", "c) Galinha"],
     respostaCorreta: "c) Galinha",
   },
-  {
-    pergunta: "Qual é o planeta mais próximo do Sol?",
-    opcoes: ["a) Terra", "b) Vênus", "c) Mercúrio"],
-    respostaCorreta: "c) Mercúrio",
-  },
-  {
-    pergunta: "Qual é o maior planeta do sistema solar?",
-    opcoes: ["a) Júpiter", "b) Saturno", "c) Urano"],
-    respostaCorreta: "a) Júpiter",
-  },
+
   {
     pergunta: "Qual é o nome da estrela que fica no centro do sistema solar?",
     opcoes: ["a) Alfa Centauri", "b) Sirius", "c) Sol"],
     respostaCorreta: "c) Sol",
   },
-  { // Digitar em um campo
+
+  { 
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Galinha", "Pinguim", "Coruja", "Pomba"],
     respostaCorreta: "aves",
   },
-  { // Digitar em um campo
+
+  { 
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Baleia", "Gato", "Cachorro", "Macaco"],
     respostaCorreta: "mamíferos",
   },
-  { // Digitar em um campo
+
+  { 
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Besouro", "Formiga", "Borboleta", "Abelha"],
     respostaCorreta: "insetos",
   },
-  { // Digitar em um campo
+
+  { 
     pergunta: "A qual grupo os seguintes animais pertencem?",
     opcoes: ["Salmão", "Tubarão", "Carpa", "Atum"],
     respostaCorreta: "peixes",
   },
-  {
-    pergunta: "Quantos planetas existem no sistema solar?",
-    opcoes: ["a) 10", "b) 11", "c) 7 ", "d) 8"],
-    respostaCorreta: "d) 8",
-  },
+
   {
     pergunta: "O que causa o arco-íris?",
     opcoes: [
@@ -67,6 +60,7 @@ const perguntas = [
     ],
     respostaCorreta: "b) A refração da luz do Sol nas gotas de chuva",
   },
+
   {
     pergunta: "O que é uma sombra?",
     opcoes: [
