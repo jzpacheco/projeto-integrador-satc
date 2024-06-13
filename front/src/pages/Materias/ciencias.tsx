@@ -20,7 +20,7 @@ const Ciencias: React.FC = () => {
         </Link>
         <Link href="/ciencias/jogo3ciencia" passHref>
           <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
-            jogo de correspondência
+            Jogo de correspondência
           </button>
         </Link>
       </div>
