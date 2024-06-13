@@ -1,46 +1,164 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-const words = ["cachorro", "gato", "banana", "avião", "laranja", "mesa"];
+interface Question {
+  question: string;
+  options: string[];
+  correctAnswer: string;
+}
 
-const PortugueseSpellingGame: React.FC = () => {
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [typedWord, setTypedWord] = useState("");
+const questions: Question[] = [
+  {
+    question: "Qual é o tipo de acento utilizado na palavra 'cidadão'?",
+    options: ["Acento agudo", "Acento circunflexo", "Acento til", "Sem acento"],
+    correctAnswer: "Acento til"
+  },
+
+  {
+    question: "Qual é o tipo de acento utilizado na palavra 'café'?",
+    options: ["Acento agudo", "Acento circunflexo", "Acento grave", "Sem acento"],
+    correctAnswer: "Acento agudo"
+  },
+
+  {
+    question: "Qual é o tipo de acento utilizado na palavra 'português'?",
+    options: ["Acento agudo", "Acento circunflexo", "Acento grave", "Sem acento"],
+    correctAnswer: "Acento circunflexo"
+  },
+
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Eja", "Estudante", "Cabelereira", "Lapis"],
+    correctAnswer: "Estudante"
+  },
+
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Áviao", "Sapatô", "Médico", "Risadã"],
+    correctAnswer: "Médico"
+  },
+
+  {
+    question: "Qual é a palavra que vai acento?",
+    options: ["Pato", "Cançao", "Papai", "Atleta"],
+    correctAnswer: "Canção"
+  },
+
+  {
+    question: "Qual é a palavra que possui acentuação?",
+    options: ["Cachorro", "Galinha", "Oculos", "Cadeira"],
+    correctAnswer: "Óculos"
+  },
+
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Ilha", "Mãrmore", "Cidadê", "Propagandá"],
+    correctAnswer: "Ilha"
+  },
+
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Camísa", "Mèdico", "Matematica", "Aniversário"],
+    correctAnswer: "Aniversário"
+  },
+
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Cãnil", "Guitárra", "Macáco", "Caminhão"],
+    correctAnswer: "Caminhão"
+  },
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Vitoria", "Relogio", "Pipoca", "Paciente"],
+    correctAnswer: "Relógio"
+  },
+
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Põrta", "Nacional", "Livraría", "Mascára"],
+    correctAnswer: "Nacional"
+  },
+
+  {
+    question: "Qual é a palavra corretamente acentuada?",
+    options: ["Caixá", "História", "Farmacia", "Mênino"],
+    correctAnswer: "História"
+  }
+  
+  {
+    question: "Qual palavra precisa de acento gráfico?",
+    options: ["Cafe", "Casa", "Avo", "Trofeu"],
+    correctAnswer: "Cafe"
+
+  },
+
+  {
+    question: "Qual alternativa está corretamente acentuada?",
+    options: ["Portatil", "Cômodo", "Fácil", "Áspero"],
+    correctAnswer: "Cômodo"
+
+  },
+
+  {
+    question: "Qual termo precisa de acento?",
+    options: ["Problema", "Leitura", "Porta", "Remedio"],
+    correctAnswer: "Remedio"
+
+  },
+
+  {
+    question: "Qual opção está corretamente acentuada?",
+    options: ["Colonia", "Papel", "Pincel", "Chapeu"],
+    correctAnswer: "Pincel"
+
+  },
+];
+
+const PortugueseWordGame: React.FC = () => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
-  const handleCheckSpelling = () => {
-    const correctWord = words[currentWordIndex];
-    if (typedWord.toLowerCase() === correctWord) {
+  const handleCheckAnswer = () => {
+    if (selectedOption === questions[currentQuestion].correctAnswer) {
       setIsCorrect(true);
     } else {
       setIsCorrect(false);
     }
   };
 
-  const handleNextWord = () => {
-    setTypedWord("");
+  const handleNextQuestion = () => {
+    setSelectedOption(null);
     setIsCorrect(null);
-    setCurrentWordIndex(currentWordIndex + 1);
+    setCurrentQuestion(currentQuestion + 1);
   };
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-blue-300">
       <h1 className="mb-8 text-3xl font-bold">
-        Jogo de Soletrar Palavras em Língua Portuguesa para Séries Iniciais
+        Jogo de Palavras em Língua Portuguesa para Séries Iniciais
       </h1>
-      {currentWordIndex < words.length ? (
+      {currentQuestion < questions.length ? (
         <div className="mb-4">
-          <p>Escreva a palavra corretamente:</p>
-          <p>{words[currentWordIndex]}</p>
-          <input
-            type="text"
-            value={typedWord}
-            onChange={(e) => setTypedWord(e.target.value)}
-            className="border rounded-md p-2 mt-2"
-          />
+          <p>{questions[currentQuestion].question}</p>
+          <div className="flex flex-col">
+            {questions[currentQuestion].options.map((option, index) => (
+              <label key={index} className="inline-flex items-center mt-2">
+                <input
+                  type="radio"
+                  value={option}
+                  checked={selectedOption === option}
+                  onChange={() => setSelectedOption(option)}
+                  className="form-radio h-5 w-5 text-blue-600"
+                />
+                <span className="ml-2">{option}</span>
+              </label>
+            ))}
+          </div>
           {isCorrect !== null && (
             <p className="mt-2">
-              {isCorrect ? "Parabéns, você acertou!" : "Que pena, você errou."}
+              {isCorrect ? "Parabéns, você acertou!" : "Que pena, você errou."}{" "}
+              A resposta correta é: {questions[currentQuestion].correctAnswer}
             </p>
           )}
         </div>
@@ -49,20 +167,23 @@ const PortugueseSpellingGame: React.FC = () => {
           <p>Parabéns, você completou o jogo!</p>
         </div>
       )}
-      {currentWordIndex < words.length && (
+      {currentQuestion < questions.length && (
         <button
-          onClick={handleCheckSpelling}
-          className={`bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mt-4`}
+          onClick={handleCheckAnswer}
+          disabled={selectedOption === null}
+          className={`bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mt-4 ${
+            selectedOption === null ? "cursor-not-allowed" : ""
+          }`}
         >
-          Verificar Palavra
+          Verificar Resposta
         </button>
       )}
       {isCorrect !== null && (
         <button
-          onClick={handleNextWord}
-          className={`bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4`}
+          onClick={handleNextQuestion}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"
         >
-          Próxima Palavra
+          Próxima Pergunta
         </button>
       )}
       <Link href="/Materias/linguas" passHref>
@@ -74,4 +195,4 @@ const PortugueseSpellingGame: React.FC = () => {
   );
 };
 
-export default PortugueseSpellingGame;
+export default PortugueseWordGame;
