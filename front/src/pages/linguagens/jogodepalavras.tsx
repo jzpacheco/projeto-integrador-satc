@@ -8,21 +8,95 @@ interface Question {
 }
 
 const questions: Question[] = [
-  {
-    question: "Qual é o oposto de 'grande'?",
-    options: ["Pequeno", "Alto", "Largo", "Gordo"],
-    correctAnswer: "Pequeno",
-  },
-  {
-    question: "Qual destes é um animal que voa?",
-    options: ["Cachorro", "Gato", "Pássaro", "Peixe"],
-    correctAnswer: "Pássaro",
-  },
-  {
-    question: "Qual é a capital do Brasil?",
-    options: ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
-    correctAnswer: "Brasília",
-  },
+{
+    question: "Qual é a classe gramatical da palavra 'menina'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "a) Substantivo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'rápido'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "b) Adjetivo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'correr'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "d) Verbo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'amizade'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "a) Substantivo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'bonito'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "b) Adjetivo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'pular'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "d) Verbo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'azul'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "b) Adjetivo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'felizmente'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "c) Advérbio"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'cantar'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "d) Verbo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'cachorro'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "a) Substantivo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'elefante'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "a) Substantivo"
+},
+ 
+{
+    question: "Qual é a classe gramatical da palavra 'comer'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "d) Verbo"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'comigo'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "c) Advérbio"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'muito'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "c) Advérbio"
+},
+
+{
+    question: "Qual é a classe gramatical da palavra 'coragem'?",
+    options: ["a) Substantivo", "b) Adjetivo", "c) Advérbio", "d) Verbo"],
+    correctAnswer: "a) Substantivo"
+}
 ];
 
 const PortugueseQuiz: React.FC = () => {
