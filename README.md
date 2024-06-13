@@ -1,8 +1,8 @@
 # EducaPlay
 <p align="center">
-  <img height="100" src="public/images/satclogo.png">
+  <img height="100" src="front/public/images/satclogo.png"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img height="100" src="public/images/englogo.jpg">
+  <img height="100" src="front/public/images/englogo.jpg">
 </p>
   
 <hr>
