@@ -31,6 +31,6 @@ O objetivo deste projeto é desenvolver um sistema web interativo e educacional 
 ## Tecnologias, bibliotecas e frameworks
 1. HTML
 2. CSS
-3. 
+3. TypeScript
 4. 
 5. 
