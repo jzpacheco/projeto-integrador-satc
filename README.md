@@ -32,5 +32,5 @@ O objetivo deste projeto é desenvolver um sistema web interativo e educacional 
 1. HTML
 2. CSS
 3. TypeScript
-4. 
-5. 
+4. Python
+5. SQlite
