@@ -7,6 +7,7 @@ const Jogo2: React.FC = () => {
   );
   const [tentativa, setTentativa] = useState("");
   const [resultado, setResultado] = useState("");
+  const [dica, setDica] = useState("");
   const [acertos, setAcertos] = useState(0);
   const [erros, setErros] = useState(0);
 
@@ -19,14 +20,21 @@ const Jogo2: React.FC = () => {
     if (!isNaN(tentativaInt)) {
       if (tentativaInt === numeroAleatorio) {
         setResultado("Parabéns, você acertou!");
+        setDica("");
         setAcertos(acertos + 1);
         setNumeroAleatorio(Math.floor(Math.random() * 100) + 1);
+      } else if (tentativaInt > numeroAleatorio) {
+        setResultado("Tente novamente.");
+        setDica("A dica é: o número é menor.");
+        setErros(erros + 1);
       } else {
         setResultado("Tente novamente.");
+        setDica("A dica é: o número é maior.");
         setErros(erros + 1);
       }
     } else {
       setResultado("Por favor, digite um número válido.");
+      setDica("");
     }
     setTentativa("");
   };
@@ -48,6 +56,7 @@ const Jogo2: React.FC = () => {
         Verificar
       </button>
       <p>{resultado}</p>
+      {dica && <p>{dica}</p>}
       <p>Acertos: {acertos}</p>
       <p>Erros: {erros}</p>
       <Link href="/Materias/matematica" passHref>
