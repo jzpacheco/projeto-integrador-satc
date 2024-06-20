@@ -14,9 +14,12 @@ const JogoMemoria: React.FC = () => {
     { operacao: "12 + 8", resultado: 20 },
   ];
 
-  const [cartas, setCartas] = useState(
-    [...operacoes, ...operacoes].sort(() => Math.random() - 0.5)
-  );
+  const pares = operacoes.flatMap(op => [
+    { ...op, type: "operacao" },
+    { operacao: op.resultado.toString(), resultado: op.resultado, type: "resultado" }
+  ]);
+
+  const [cartas, setCartas] = useState(pares.sort(() => Math.random() - 0.5));
   const [selecionadas, setSelecionadas] = useState<number[]>([]);
   const [paresEncontrados, setParesEncontrados] = useState<number[]>([]);
   const [resultadoTentativa, setResultadoTentativa] = useState<
@@ -31,7 +34,10 @@ const JogoMemoria: React.FC = () => {
   const verificarTentativa = () => {
     if (selecionadas.length === 2) {
       const [carta1, carta2] = selecionadas;
-      if (cartas[carta1].resultado === cartas[carta2].resultado) {
+      if (
+        (cartas[carta1].type === "operacao" && cartas[carta2].resultado === parseInt(cartas[carta1].resultado.toString())) ||
+        (cartas[carta2].type === "operacao" && cartas[carta1].resultado === parseInt(cartas[carta2].resultado.toString()))
+      ) {
         setParesEncontrados([...paresEncontrados, carta1, carta2]);
         setSelecionadas([]);
         setResultadoTentativa("acertou");
@@ -53,7 +59,7 @@ const JogoMemoria: React.FC = () => {
   }, [selecionadas]);
 
   const reiniciarJogo = () => {
-    setCartas([...operacoes, ...operacoes].sort(() => Math.random() - 0.5));
+    setCartas(pares.sort(() => Math.random() - 0.5));
     setSelecionadas([]);
     setParesEncontrados([]);
     setResultadoTentativa("");
@@ -81,12 +87,12 @@ const JogoMemoria: React.FC = () => {
                 <FaTimes className="text-red-500 text-2xl" />
               )
             ) : (
-              carta.operacao
+              carta.type === "operacao" ? carta.operacao : carta.operacao
             )}
           </div>
         ))}
       </div>
-      {paresEncontrados.length === operacoes.length && (
+      {paresEncontrados.length === pares.length && (
         <button
           onClick={reiniciarJogo}
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4"

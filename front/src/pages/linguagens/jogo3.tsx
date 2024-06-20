@@ -83,7 +83,7 @@ const questions: Question[] = [
     question: "Qual é a palavra corretamente acentuada?",
     options: ["Caixá", "História", "Farmacia", "Mênino"],
     correctAnswer: "História"
-  }
+  },
   
   {
     question: "Qual palavra precisa de acento gráfico?",
