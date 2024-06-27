@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'science',
     'portuguese',
     'mathematics',
+    'common',
 ]
 
 CHANNEL_LAYERS = {

@@ -5,7 +5,7 @@ from .models import Session, Question, Answer
 from django.contrib.auth.models import User
 from asgiref.sync import sync_to_async
 
-class MathematicsConsumer(AsyncWebsocketConsumer):
+class EnglishConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.session_id = self.scope['url_route']['kwargs']['session_id']
         self.session_group_name = f'session_{self.session_id}'
@@ -75,4 +75,4 @@ class MathematicsConsumer(AsyncWebsocketConsumer):
     
     async def send_message(self, event):
         message = event['message']
-        await self.send(text_data=json.dumps(message))  
+        await self.send(text_data=json.dumps(message))
